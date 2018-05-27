@@ -6,5 +6,5 @@ python:
 services:
   - docker
 script:
-  - docker build --tag myimage .
-  - docker run -p 5000:5000 myimage pytest # or py.test for Python versions 3.5 and below
+  - docker-compose build
+  - docker-compose run web pytest # or py.test for Python versions 3.5 and below
