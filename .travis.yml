@@ -4,7 +4,8 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+before_script:
+  - python rest-server.py
 # command to run tests
 script:
-  - python rest-server.py
   - pytest # or py.test for Python versions 3.5 and below
