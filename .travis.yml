@@ -5,16 +5,6 @@ python:
     - "3.6"
 services:
   - docker
-# before_install:
-#   - sudo apt-get update
-#   - sudo apt-get -y -o Dpkg::Options::="--force-confnew" install docker-ce
 script:
   - docker build --tag myimage .
-  - docker run myimage pytest # or py.test for Python versions 3.5 and below
-
-# command to install dependencies
-# install:
-#   - pip install -r requirements.txt
-# command to run tests
-# script:
-#   - pytest # or py.test for Python versions 3.5 and below
+  - docker run -p 5000:5000 myimage pytest # or py.test for Python versions 3.5 and below
