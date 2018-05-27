@@ -1,9 +1,4 @@
-Flask
-Flask-HTTPAuth
-Flask-RESTful
-Jinja2
-MarkupSafe
-Werkzeug
-itsdangerous
-six
-requests
+Flask==1.0.2
+Flask-HTTPAuth==3.2.3
+Flask-RESTful==0.3.6
+requests==2.18.4
