@@ -15,6 +15,7 @@ RUN pip install gunicorn==19.8.1
 # Copy the current directory contents into the container at /code
 COPY  ./ /code/
 
+# Remove __pycache__ folders
 RUN find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
 
 # Make port 5000 available to the world outside this container
