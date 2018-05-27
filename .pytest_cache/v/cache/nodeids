@@ -1,0 +1,5 @@
+[
+  "test_flaskr.py::test_index",
+  "test_flaskr.py::test_Tasks",
+  "test_flaskr.py::test_Task"
+]
